@@ -1,20 +1,19 @@
-import Dice from "./Dice";
-
-//Harbour-Bold
-let myFont = loadFont("./Links/Harbour Regular.ttf");
-
+////-------------------------------------------------------------------Import, Font, Render
+import Dice from "./Dice.js";
+let myFont = loadFont("./Links/Harbour Regular.ttf"); //Harbour-Bold
 function render() {
   //Origin: Background 1000x250 Pixel (1:4)
-  //500, 125
-  translate(500, 125);
+  //125, 500
+  translate(125, 500);
   scale(1.0);
-  background(110, 248, 189);
+  background(131, 3, 266);
 }
 
-////-------------------------------------------------------------------mouseClicked
+////-------------------------------------------------------------------Instanzierung
+let fourSidedDice = new Dice(4, 0, 0);
 
+////-------------------------------------------------------------------touchStarted
 window.touchStarted = touchStarted;
-
 function touchStarted() {
   // if (mouseX > 240 && mouseX < 360 && mouseY > 631 && mouseY < 692) {
   //   screen = "planetStart";
@@ -22,9 +21,9 @@ function touchStarted() {
 }
 
 ////-------------------------------------------------------------------draw
-
 window.draw = draw;
-
 function draw() {
   render();
+
+  fourSidedDice.display();
 }

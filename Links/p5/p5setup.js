@@ -1,3 +1,10 @@
+// window.preload = preload;
+
+// let fourSidedDice
+// function preload() {
+// fourSidedDice.icon = loadImage("./Links/" + this.sideAmount + ".svg");
+// }
+
 function setup() {
   //1000 x 250 px
   let myCanvas = createCanvas(250, 1000);

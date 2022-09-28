@@ -1,6 +1,6 @@
 function setup() {
-  //1100x620px
-  let myCanvas = createCanvas(640, 640);
+  //1000 x 250 px
+  let myCanvas = createCanvas(250, 1000);
   myCanvas.parent("drosmordices");
 
   frameRate(30);

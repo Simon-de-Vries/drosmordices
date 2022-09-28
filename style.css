@@ -1,19 +1,16 @@
 :root {
-  --white: #fff;
+  --white: #f2f2f2;
   --black: #000;
-  --primary: #00ffff;
-  --secondary: #15114d;
-  --third: #6ef8bd;
+  --primary: #8303a6;
+  --secondary: #6ef8bd;
+  --third: #416ef2;
 }
 
 body {
   padding: 0;
   margin: 0;
-  background-color: var(--secondary);
-}
-
-body * {
-  font-family: VCR OSD Mono;
+  background-color: var(--primary);
+  font-family: Harbour;
   text-align: center;
 }
 
@@ -23,27 +20,20 @@ canvas {
 }
 
 @font-face {
-  font-family: VCR OSD Mono;
-  src: url("Links/VCR_OSD_MONO_1.001.ttf");
+  font-family: Harbour;
+  src: url("Links/Harbour\ Regular.ttf");
 }
 
 h1 {
-  font-size: 500px;
-  color: var(--third);
-  margin-top: -100px;
-  margin-bottom: 0px;
+  font-size: 30px;
+  color: var(--secondary);
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 h2 {
-  font-size: 500px;
-  color: var(--third);
-  margin-top: -10px;
+  font-size: 53.5px;
+  color: var(--white);
+  margin-top: -75px;
   margin-bottom: 30px;
-}
-
-h3 {
-  font-size: 30px;
-  color: var(--third);
-  margin-top: 60px;
-  margin-bottom: 60px;
 }

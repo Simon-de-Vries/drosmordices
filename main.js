@@ -6,18 +6,23 @@ function render() {
   //125, 500
   translate(125, 500);
   scale(1.0);
-  background(131, 3, 266);
+  background(131, 3, 166);
 }
 
 ////-------------------------------------------------------------------Instanzierung
-let fourSidedDice = new Dice(4, 0, 0);
+
+let dices = [];
+for (let i = 2; i <= 6; i++) {
+  let d = new Dice(2 * i, 0, -820 + 200 * i);
+  dices.push(d);
+}
 
 ////-------------------------------------------------------------------touchStarted
 window.touchStarted = touchStarted;
 function touchStarted() {
-  // if (mouseX > 240 && mouseX < 360 && mouseY > 631 && mouseY < 692) {
-  //   screen = "planetStart";
-  // }
+  for (let i = 0; i <= 4; i++) {
+    dices[i].buttonClicked();
+  }
 }
 
 ////-------------------------------------------------------------------draw
@@ -25,5 +30,9 @@ window.draw = draw;
 function draw() {
   render();
 
-  fourSidedDice.display();
+  for (let i = 0; i <= 4; i++) {
+    dices[i].display();
+    dices[i].button();
+    dices[i].result();
+  }
 }

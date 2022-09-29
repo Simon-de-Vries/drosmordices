@@ -1,6 +1,6 @@
 ////-------------------------------------------------------------------Import, Font, Render
 import Dice from "./Dice.js";
-let myFont = loadFont("./Links/Harbour Regular.ttf"); //Harbour-Bold
+
 function render() {
   //Origin: Background 1000x250 Pixel (1:4)
   //125, 500

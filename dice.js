@@ -3,6 +3,8 @@
 //purple
 //131, 3, 166
 
+let myFont = loadFont("./Links/Harbour Regular.ttf"); //Harbour-Bold
+
 export default class Dice {
   constructor(sideAmount, positionX, positionY) {
     this.sideAmount = sideAmount;
@@ -37,7 +39,7 @@ export default class Dice {
     );
 
     //Level
-    textFont("Harbour-Bold");
+    textFont(myFont);
     textSize(20);
     textAlign(CENTER);
     fill(255);

@@ -33,7 +33,7 @@ export default class Dice {
     image(
       this.icon,
       0 + this.positionX,
-      -40 + this.positionY,
+      -60 + this.positionY,
       this.icon.width / 15,
       this.icon.height / 15
     );
@@ -46,8 +46,13 @@ export default class Dice {
     text(
       "LEVEL " + this.levelArray[this.sideAmount / 2],
       0 + this.positionX,
-      0 + this.positionY
+      -20 + this.positionY
     );
+
+    textSize(10);
+    fill(110, 248, 189);
+    text(this.sideAmount + " FACES", 0 + this.positionX, -1 + this.positionY);
+
     // image(this.icon, 0, 0, this.icon.width / 2, this.icon.height / 2);
   }
 

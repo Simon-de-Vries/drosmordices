@@ -1,5 +1,12 @@
 ////-------------------------------------------------------------------Import, Font, Render
 import Dice from "./Dice.js";
+// import { io } from "socket.io-client";
+
+// const socket = io("http://localhost:3000");
+// socket.on("connect", () => {
+//   displayMessage(`You connected with id: ${socket.id}`);
+//   socket.emit("custom-event", 10);
+// });
 
 function render() {
   //Origin: Background 1000x250 Pixel (1:4)
